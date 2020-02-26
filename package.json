@@ -1,0 +1,48 @@
+{
+  "name": "express_api",
+  "version": "1.0.0",
+  "description": "Getting started with Node Express Rest API building",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "start": "nodemon app.js",
+    "test": "mocha tests/**/*Tests.js "
+  },
+  "keywords": [
+    "node",
+    "express",
+    "rest",
+    "api"
+  ],
+  "author": "Saptarshi Basu",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.7.1",
+    "nodemon": "^1.19.2"
+  },
+  "devDependencies": {
+    "eslint": "^6.4.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.3.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-prettier": "^3.1.0",
+    "mocha": "^6.2.0",
+    "prettier": "^1.18.2",
+    "should": "^13.2.3",
+    "sinon": "^7.4.2",
+    "supertest": "^4.0.2"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "ignore": [
+      "node_modules/**/node_modules"
+    ],
+    "delay": "2500",
+    "env": {
+      "NODE_ENV": "development",
+      "PORT": 4000
+    }
+  }
+}
